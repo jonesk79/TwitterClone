@@ -1,28 +1,8 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+For today's project, let's make a clone of Twitter.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Start off with user signups. When somebody signs up, send them a welcome email.
+Then, let users post tweets. If another user's handle is mentioned in the tweet, send that user a notification email.
+Now, let users follow each other. Hint: a user has_many :followed_users, :class_name => 'User', :through => :relationships; and a user has_many :followers, :class_name => 'User', :through => :relationships.
+Let users upload photos in their tweets.
