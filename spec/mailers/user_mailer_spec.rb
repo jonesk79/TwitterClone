@@ -1,13 +1,13 @@
 require "spec_helper"
 
 describe UserMailer do
-  describe "signup_confirmatio" do
-    let(:mail) { UserMailer.signup_confirmatio }
+  describe "signup_confirmation" do
+    let(:mail) { UserMailer.signup_confirmation }
 
     it "renders the headers" do
-      mail.subject.should eq("Signup confirmatio")
+      mail.subject.should eq("Sign Up Confirmation")
       mail.to.should eq(["to@example.org"])
-      mail.from.should eq(["from@example.com"])
+      mail.from.should eq(["twitterclone@example.com"])
     end
 
     it "renders the body" do
